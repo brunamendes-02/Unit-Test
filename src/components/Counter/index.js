@@ -5,11 +5,10 @@ function Counter() {
   const [counter, setCounter] = useState(0);
 
   function getModifier() {
-    if (counter > 0) return "counter__title--increment";
-    if (counter < 0) return "counter__title--decrement";
+    if (counter > 0) return "title--increment";
+    if (counter < 0) return "title--decrement";
     return "";
   }
-
   return (
     <div className="counter">
       <h1 className={`counter__title ${getModifier()}`}>{counter}</h1>

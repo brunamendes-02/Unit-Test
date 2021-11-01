@@ -11,10 +11,10 @@
   font-size: 95px;
 }
 
-.counter__title--increment {
+.title--increment {
   color: var(--color-button-increment);
 }
-.counter__title--decrement {
+.title--decrement {
   color: var(--color-button-decrement);
 }
 

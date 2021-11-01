@@ -3,13 +3,12 @@ import userEvent from '@testing-library/user-event'
 
 import Counter from '.'
 
-describe('Counter component', () => {
+describe('Testando o component Counter', () => {
     // ----------------------------------------------------------------- //
     test('Deve iniciar com o valor 0', () => {
         render(<Counter />);
         const counterTitle = screen.getByText('0'); // tenta encontrar o texto e retorna o elemento, caso n encontre já lança erro
         // const counterTitle = screen.queryByText('0'); // tenta encontrar o texto e retorna o elemento, caso n encontre retorna null
-        // const counterTitle = screen.findByText('0'); // retorna uma promisse
         
         expect(counterTitle).toBeInTheDocument(); // verifica se existe no documento
     });
