@@ -60,14 +60,14 @@ describe('Testando o component Counter', () => {
     });
 
     // ----------------------------------------------------------------- //
-    test('Deve adicionar a classe counter__title--increment no titulo quando valor > 0', () => {
+    test('Deve adicionar a classe counter__title title--increment no titulo quando valor > 0', () => {
         render(<Counter />);
         
         const buttonIncrement = screen.getByRole('button', {name: /incrementar/i});
 
         expect(screen.queryByText('0')).not.toHaveClass('counter__title--increment');
         userEvent.click(buttonIncrement);
-        expect(screen.getByText('1')).toHaveClass('counter__title--increment')
+        expect(screen.getByText('1')).toHaveClass('counter__title title--increment')
 
     });
 })
